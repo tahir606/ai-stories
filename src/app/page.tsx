@@ -1,3 +1,4 @@
+import Prompt from "@/components/prompt";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,7 +13,10 @@ export default function Home() {
           height={37}
           priority
         />
-      </div>      
+      </div>
+      <div>
+        <Prompt />
+      </div>
     </main>
   );
 }
