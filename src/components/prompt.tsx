@@ -1,5 +1,6 @@
 "use client";
 
+import { createAPI } from "@/app/api/services/openai";
 import { useState } from "react";
 
 // This is an input form for the user to enter a prompt for the AI to generate a response to.
@@ -8,6 +9,7 @@ export default function Prompt() {
 
   const processPrompt = () => {
     console.log(query);
+    createAPI();
   };
 
   return (
